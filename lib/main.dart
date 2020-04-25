@@ -3,6 +3,7 @@ import 'package:doctriod/screens/Categories.dart';
 import 'package:doctriod/screens/DoctorProfile.dart';
 import 'package:doctriod/screens/Doctors.dart';
 import 'package:doctriod/screens/FindDoctor.dart';
+import 'package:doctriod/screens/PersonalInformation.dart';
 import 'package:doctriod/screens/SignIn.dart';
 import 'package:flutter/material.dart';
 import 'screens/IntroductionScreen.dart';
@@ -18,7 +19,7 @@ class doctroid extends StatelessWidget{
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute:  FingDoctor.id,
+      initialRoute:  mainPage.id,
 
       routes:{
         mainPage.id : (context)=>mainPage(),
@@ -28,6 +29,8 @@ class doctroid extends StatelessWidget{
         doctors.id : (context)=>doctors(),
         DoctorProfile.id:(context)=>DoctorProfile(),
         FingDoctor.id:(context)=>FingDoctor(),
+        PersonalInfo.id:(context)=>PersonalInfo(),
+
 
 
       },
