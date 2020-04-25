@@ -15,17 +15,9 @@ class categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    return Scaffold(
+
      backgroundColor: Colors.white,
-     appBar: AppBar(
-       title: Center(child: Text("Categories")),
-       flexibleSpace: Container(
-         decoration: BoxDecoration(
-             gradient: LinearGradient(
-                 begin: Alignment.topRight,
-                 end: Alignment.bottomLeft,
-                 colors: <Color>[Colors.blue, Colors.green])),
-       ),
-     ),
+
      body: CustomScrollView(
        primary: false,
        slivers: <Widget>[
