@@ -1,3 +1,4 @@
+import 'package:doctriod/screens/AppointmentDetails.dart';
 import 'package:doctriod/widgets/DoctorListItem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +34,7 @@ class docProf extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.only(top :37.0 ,  right: 10,left: 10),
+        padding: const EdgeInsets.only(top: 37.0, right: 10, left: 10),
         child: Column(
           children: [
             Padding(
@@ -194,9 +195,13 @@ class docProf extends StatelessWidget {
                             colors: [Colors.blue, Colors.green]),
                         borderRadius: BorderRadius.circular(5)),
                     child: MaterialButton(
-                      child: Text("Book Appoinment" , style: TextStyle(color: Colors.white),),
+                      child: Text(
+                        "Book Appoinment",
+                        style: TextStyle(color: Colors.white),
+                      ),
                       onPressed: () {
-                       // Navigator.pushNamed(context, MyStatefulWidget.id);
+                        Navigator.pushNamed(
+                            context, AppointmentDetailsScreen.id);
                       },
                     ),
                   ),

@@ -1,3 +1,4 @@
+import 'package:doctriod/screens/AppointmentDetails.dart';
 import 'package:doctriod/screens/ButtomNavigationBar.dart';
 import 'package:doctriod/screens/Categories.dart';
 import 'package:doctriod/screens/DoctorProfile.dart';
@@ -12,27 +13,22 @@ void main() {
   runApp(doctroid());
 }
 
-class doctroid extends StatelessWidget{
+class doctroid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute:  FingDoctor.id,
-
-      routes:{
-        mainPage.id : (context)=>mainPage(),
-        signin.id : (context)=>signin(),
-        signup.id : (context)=>signup(),
-        MyStatefulWidget.id :(context)=>MyStatefulWidget(),
-        doctors.id : (context)=>doctors(),
-        DoctorProfile.id:(context)=>DoctorProfile(),
-        FingDoctor.id:(context)=>FingDoctor(),
-
-
+      initialRoute: mainPage.id,
+      routes: {
+        mainPage.id: (context) => mainPage(),
+        signin.id: (context) => signin(),
+        signup.id: (context) => signup(),
+        MyStatefulWidget.id: (context) => MyStatefulWidget(),
+        doctors.id: (context) => doctors(),
+        DoctorProfile.id: (context) => DoctorProfile(),
+        FingDoctor.id: (context) => FingDoctor(),
+        AppointmentDetailsScreen.id: (context) => AppointmentDetailsScreen(),
       },
     );
   }
-
 }
-
