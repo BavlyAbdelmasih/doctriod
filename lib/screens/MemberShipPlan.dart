@@ -1,4 +1,4 @@
-import 'package:doctriod/screens/test.dart';
+import 'file:///D:/07-Flutter%20projects/doctriod/lib/widgets/SwipeItemWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
