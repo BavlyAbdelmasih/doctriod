@@ -55,15 +55,13 @@ class PersonalInfo extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 0.0),
-                  ),
                 ],
               ),
             ),
           ),
           Divider(
             thickness: 2,
+
           ),
           Padding(
             padding: const EdgeInsets.all(15.0),

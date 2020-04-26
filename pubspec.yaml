@@ -31,6 +31,8 @@ dependencies:
   intro_views_flutter: '^2.8.1'
   introduction_screen: ^1.0.7
   snapping_sheet: ^2.0.0
+  flutter_swiper: ^1.1.6
+
 
 
 

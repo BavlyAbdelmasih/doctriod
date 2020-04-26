@@ -1,3 +1,4 @@
+import 'package:doctriod/screens/PersonalInformation.dart';
 import 'package:doctriod/widgets/DoctorListItem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -152,6 +153,7 @@ class docProf extends StatelessWidget {
                   trailing: const Icon(Icons.arrow_forward_ios),
                   onTap: () {
                     /* react to the tile being tapped */
+                    Navigator.pushNamed(context, PersonalInfo.id);
                   }),
             ),
             SizedBox(

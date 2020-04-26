@@ -3,6 +3,7 @@ import 'package:doctriod/screens/Categories.dart';
 import 'package:doctriod/screens/DoctorProfile.dart';
 import 'package:doctriod/screens/Doctors.dart';
 import 'package:doctriod/screens/FindDoctor.dart';
+import 'package:doctriod/screens/MemberShipPlan.dart';
 import 'package:doctriod/screens/PersonalInformation.dart';
 import 'package:doctriod/screens/SignIn.dart';
 import 'package:flutter/material.dart';
@@ -30,6 +31,7 @@ class doctroid extends StatelessWidget{
         DoctorProfile.id:(context)=>DoctorProfile(),
         FingDoctor.id:(context)=>FingDoctor(),
         PersonalInfo.id:(context)=>PersonalInfo(),
+        MemberShip.id : (context)=>MemberShip()
 
 
 
