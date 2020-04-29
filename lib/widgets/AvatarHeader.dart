@@ -1,17 +1,27 @@
+import 'dart:ffi';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AvatarHeader extends StatelessWidget {
   final name;
+  final double nameFontSize;
+  final double avatarSize;
+  final String bottomText;
+  final IconData bottomIcon;
   const AvatarHeader({
     @required this.name,
+    this.nameFontSize = 25.0,
+    this.avatarSize = 45.0,
+    this.bottomText = "4.5",
+    this.bottomIcon = FontAwesomeIcons.star,
     Key key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final address = "7 street mostafa kamel";
     return Container(
       child: Column(
         children: <Widget>[
@@ -19,7 +29,7 @@ class AvatarHeader extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ProfileAvatar(
-                s: 45.0,
+                s: avatarSize,
               ),
               SizedBox(
                 width: 20,
@@ -30,7 +40,7 @@ class AvatarHeader extends StatelessWidget {
                   Text(
                     name,
                     style: TextStyle(
-                        fontSize: 25,
+                        fontSize: nameFontSize,
                         color: Color(0xFF19769f),
                         fontWeight: FontWeight.bold),
                   ),
@@ -45,14 +55,17 @@ class AvatarHeader extends StatelessWidget {
                     height: 5,
                   ),
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    textBaseline: TextBaseline.alphabetic,
                     children: [
                       Icon(
-                        Icons.location_on,
+                        bottomIcon,
                         size: 15,
                         color: Color(0xFF5FE5BC),
                       ),
+                      SizedBox(width: 5),
                       Text(
-                        address,
+                        bottomText,
                         style: TextStyle(fontSize: 13, color: Colors.black),
                       )
                     ],
